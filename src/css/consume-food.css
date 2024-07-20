@@ -1,0 +1,348 @@
+.food-container {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    box-shadow: 0 140px 180px rgba(87, 85, 85, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%   ;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+.suggection{
+  display: flex;
+}
+.burn-calory{
+
+  margin: 0 auto; 
+  border-radius: 10px;
+  width: 63%;
+  margin-top: 1rem ;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #000;
+  margin-bottom: 4rem;
+  
+}
+.food {
+    display: flex;
+    margin:auto 0;
+    flex-direction: row; 
+    align-items: center;
+    gap: 5rem; 
+}
+
+.wave-group {
+    position: relative;
+  }
+  
+  .wave-group .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: none;
+  }
+  
+  .wave-group .input:focus {
+    outline: none;
+  }
+  
+  .wave-group .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+  }
+  
+  .wave-group .input:focus ~ label .label-char,
+  .wave-group .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+    color: #fff;
+    
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #ffffff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 50%;
+  }
+  
+  .wave-group .input:focus ~ .bar:before,
+  .wave-group .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .calculate-button-container {
+    text-align: center;
+    margin-top: 1rem; 
+  }
+span{
+
+ 
+}
+.calculate-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.calculate-button:hover {
+    background-color: #0056b3;
+}
+.food-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+}
+
+.svg {
+  width: 3.25em;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+ }
+ 
+ circle {
+  fill: none;
+  stroke: hsl(214, 97%, 59%);
+  stroke-width: 2;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash4 1.5s ease-in-out infinite;
+ }
+ 
+ @keyframes rotate4 {
+  100% {
+   transform: rotate(360deg);
+  }
+ }
+ 
+ @keyframes dash4 {
+  0% {
+   stroke-dasharray: 1, 200;
+   stroke-dashoffset: 0;
+  }
+ 
+  50% {
+   stroke-dasharray: 90, 200;
+   stroke-dashoffset: -35px;
+  }
+ 
+  100% {
+   stroke-dashoffset: -125px;
+  }
+ }
+ 
+
+.wave-group {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: none;
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff !important; 
+  transition: transform 0.3s;
+  transform: scaleX(0);
+}
+.add-food-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+  width: 200px; 
+  text-align: center;
+}
+
+.add-food-button:hover {
+  background-color: #0056b3;
+}
+
+
+.input:focus + .bar {
+  transform: scaleX(1);
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.input:focus + .bar + .label,
+.input:not(:placeholder-shown) + .bar + .label {
+  transform: translateY(-20px);
+  color: #000000;
+}
+
+.label-char {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.input:focus + .bar + .label .label-char,
+.input:not(:placeholder-shown) + .bar + .label .label-char {
+  transform: translateY(-20px);
+}
+
+.add-food-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.add-food-button:hover {
+  background-color: #0056b3;
+}
+.suggection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nut{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .food-container{
+    width: 80%;
+    margin-left: 8%;
+  }
+  
+.food {
+  flex-direction: column; 
+  align-items: center; 
+
+}
+.foot{
+  margin-top: 10%;
+}
+.nut{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.suggection{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.food-row {
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+
+.button{
+  display: grid;
+  gap: 20px;
+}
+  .food {
+      gap: 1rem; 
+}
+.burn-calory{
+ 
+  width: 87%;
+ 
+}
+}

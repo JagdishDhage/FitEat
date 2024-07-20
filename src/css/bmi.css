@@ -1,0 +1,95 @@
+.bmi-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 2rem;
+    border: 1px solid #000;
+    border-radius: 15px;
+    width: 70%;
+    margin: 0 auto ; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cen{
+    text-align: center;
+}
+.bmi-title{
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700 ;
+    font-style: italic ;
+    margin-bottom: 10px;
+}
+
+.input-group {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+p{
+    font-size: 20px;
+}
+
+input[type="number"], .gender-select {
+    
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.gender-select {
+    width: 250px;
+}
+.calculate-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    width: 30%;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+.calculate-button:hover {
+    background-color: #0056b3;
+}
+.bmi-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 88%;
+    margin-left: 10%;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .bmi-container{
+        
+        margin: 30px 75px;
+    }
+    .bmi-result{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        text-align: center;
+    } 
+    .row {
+        display: grid;
+        justify-content: space-between;
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .calculate-button{
+        width: 100%;
+    }
+}

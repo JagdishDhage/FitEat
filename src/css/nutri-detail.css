@@ -1,0 +1,20 @@
+.response-container{
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    
+    text-align: center;
+    width: 80%;
+    margin-left: 5.5%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+} 
+.response-container li{
+    list-style: none;
+ 
+}
+.nutrient-container{
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: space-between;   
+}

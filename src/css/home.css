@@ -1,0 +1,14 @@
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-image: linear-gradient(to right,#536976, #292E49);
+}
+@media screen and (max-width: 600px) {
+    .cards{
+        display: grid;
+        gap: 15px;
+    }
+}
